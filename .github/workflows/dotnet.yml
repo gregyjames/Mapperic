@@ -1,7 +1,6 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+# .github/workflows/dotnet.yml
 
-name: .NET
+name: .NET Build and Test
 
 on:
   push:
@@ -11,21 +10,38 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 1
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal --parallel
+      # 1. Checkout the repository with a shallow clone
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1  # Shallow clone for faster checkouts
+
+      # 2. Setup .NET SDK with exact version
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x  # Specify the exact SDK version
+
+      # 3. Cache NuGet packages
+      - name: Cache NuGet packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      # 4. Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # 5. Build the solution in Release configuration
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      # 6. Run tests with parallel execution
+      - name: Test
+        run: dotnet test --verbosity normal
