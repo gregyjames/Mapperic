@@ -38,17 +38,23 @@ namespace Mapperic
                     var addDtoPropertyAttr = compilation.GetTypeByMetadataName("Mapperic.Attributes.AddDtoPropertyAttribute");
 
                     if (generateDtoAttr is null || dtoPropertyAttr is null || addDtoPropertyAttr is null)
+                    {
                         return results;
+                    }
 
                     foreach (var cls in classes)
                     {
                         var semanticModel = compilation.GetSemanticModel(cls.SyntaxTree);
                         if (semanticModel.GetDeclaredSymbol(cls) is not INamedTypeSymbol classSymbol)
+                        {
                             continue;
+                        }
 
                         // check if [GenerateDto]
                         if (!HasAttribute(classSymbol, generateDtoAttr))
+                        {
                             continue;
+                        }
 
                         // Collect normal [DtoProperty] members
                         var memberInfos = classSymbol
@@ -80,7 +86,10 @@ namespace Mapperic
             var allResults = classDtoResults.Collect();
             context.RegisterSourceOutput(allResults, (spc, results) =>
             {
-                if (!results.Any()) return;
+                if (!results.Any())
+                {
+                    return;
+                }
                 var profileCode = GenerateMappingProfile(results);
                 spc.AddSource("DtoMappingProfile.g.cs", SourceText.From(profileCode, Encoding.UTF8));
             });
@@ -113,7 +122,10 @@ namespace Mapperic
                 IPropertySymbol p => p.Type,
                 _ => null
             };
-            if (origType == null) return null;
+            if (origType == null)
+            {
+                return null;
+            }
 
             var accessibility = member.DeclaredAccessibility;
 
@@ -132,15 +144,22 @@ namespace Mapperic
                 {
                     case nameof(DtoPropertyAttribute.TargetName):
                         if (namedArg.Value.Value is string s && !string.IsNullOrEmpty(s))
+                        {
                             finalName = s;
+                        }
                         break;
                     case nameof(DtoPropertyAttribute.TargetType):
                         if (namedArg.Value.Value is ITypeSymbol ts)
+                        {
                             finalType = ts.ToString()!;
+                        }
+
                         break;
                     case nameof(DtoPropertyAttribute.ConversionExpression):
                         if (namedArg.Value.Value is string expr && !string.IsNullOrEmpty(expr))
                             conversionExpr = expr;
+                        break;
+                    default:
                         break;
                 }
             }
@@ -183,15 +202,24 @@ namespace Mapperic
                     {
                         case nameof(AddDtoPropertyAttribute.TargetName):
                             if (namedArg.Value.Value is string s && !string.IsNullOrEmpty(s))
+                            {
                                 targetName = s;
+                            }
+
                             break;
                         case nameof(AddDtoPropertyAttribute.TargetType):
                             if (namedArg.Value.Value is ITypeSymbol ts)
+                            {
                                 targetType = ts.ToString()!;
+                            }
+
                             break;
                         case nameof(AddDtoPropertyAttribute.ConversionExpression):
                             if (namedArg.Value.Value is string expr && !string.IsNullOrEmpty(expr))
+                            {
                                 conversionExpr = expr;
+                            }
+
                             break;
                     }
                 }
