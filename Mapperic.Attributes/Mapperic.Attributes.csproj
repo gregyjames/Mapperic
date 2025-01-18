@@ -4,12 +4,10 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <OutputItemType>Analyzer</OutputItemType>
-        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <IncludeBuildOutput>true</IncludeBuildOutput>
         <IsPackable>true</IsPackable>
-        <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>Mapperic</Title>
+        <Title>Mapperic.Attributes</Title>
         <Authors>Greg James</Authors>
         <Copyright>Copyright (c) 2025 Greg James</Copyright>
         <PackageProjectUrl>https://github.com/gregyjames/Mapperic</PackageProjectUrl>
@@ -30,20 +28,10 @@
         <None Include="docs\Icons8-Windows-8-Data-Mind-Map.128.png" Pack="true" PackagePath="\" />
     </ItemGroup>
     
-    <ItemGroup>
-      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.11.0" />
-      <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="docs\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Mapperic.Attributes\Mapperic.Attributes.csproj" />
-    </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
 </Project>

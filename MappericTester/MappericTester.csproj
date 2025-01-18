@@ -13,6 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Mapperic.Attributes\Mapperic.Attributes.csproj" />
       <ProjectReference Include="..\Mapperic\Mapperic.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="true" />
     </ItemGroup>
 
