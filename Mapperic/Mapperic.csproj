@@ -21,7 +21,7 @@
         <PackageTags>dto, data, automapper, mapper, oop, object, fields</PackageTags>
         <Description>Mapping Magic! Automatically generate DTO Classes and AutoMapper Configurations.</Description>
         <RootNamespace>Mapperic</RootNamespace>
-        <LangVersion>13</LangVersion>
+        <LangVersion>latestmajor</LangVersion>
         <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
 
