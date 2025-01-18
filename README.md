@@ -41,7 +41,7 @@ internal static class Program
     static void Main()  
     {  
         var config = new MapperConfiguration(cfg => {  
-	        cfg.AddProfile<DTOGenerator.Profiles.DtoMappingProfile>(); // DTO will be generated in the DTOGen.Profiles Namespace  
+	        cfg.AddProfile<Mapperic.Profiles.DtoMappingProfile>(); // This Profile will be generated for all marked types in the Mapperic.Profiles  
 		});  
         var mapper = config.CreateMapper();  
   
