@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <OutputItemType>Analyzer</OutputItemType>
@@ -22,6 +21,8 @@
         <PackageTags>dto, data, automapper, mapper, oop, object, fields</PackageTags>
         <Description>Mapping Magic! Automatically generate DTO Classes and AutoMapper Configurations.</Description>
         <RootNamespace>Mapperic</RootNamespace>
+        <LangVersion>13</LangVersion>
+        <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -46,4 +47,8 @@
       <ProjectReference Include="..\Mapperic.Attributes\Mapperic.Attributes.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="tools" />
+        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    </ItemGroup>
 </Project>

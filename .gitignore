@@ -2,3 +2,5 @@
 .idea/
 
 DTOGen.sln.DotSettings.user
+
+*.user
