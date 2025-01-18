@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOGenerator", "DTOGenerator\DTOGenerator.csproj", "{983783C1-13AC-4333-A578-0DE9D0029BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOGeneratorTester", "DTOGeneratorTester\DTOGeneratorTester.csproj", "{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{983783C1-13AC-4333-A578-0DE9D0029BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983783C1-13AC-4333-A578-0DE9D0029BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983783C1-13AC-4333-A578-0DE9D0029BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983783C1-13AC-4333-A578-0DE9D0029BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
