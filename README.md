@@ -1,3 +1,6 @@
+[![.NET](https://github.com/gregyjames/Mapperic/actions/workflows/dotnet.yml/badge.svg)](https://github.com/gregyjames/Mapperic/actions/workflows/dotnet.yml)
+[![NuGet latest version](https://badgen.net/nuget/v/Mapperic)](https://www.nuget.org/packages/Mapperic)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Mapperic)
 # Mapperic  
 Mapping Magic! Automatically generate DTO Classes and AutoMapper Configurations using Roslyn Incremental Source Generators.
 
