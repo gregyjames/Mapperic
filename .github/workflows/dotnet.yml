@@ -38,10 +38,6 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      # 5. Build the solution in Release configuration
-      - name: Build
-        run: dotnet build --no-restore --configuration Release
-
-      # 6. Run tests with parallel execution
+      # 5. Run tests with parallel execution
       - name: Test
-        run: dotnet test --verbosity normal
+        run: dotnet test --verbosity minimal
