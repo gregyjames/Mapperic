@@ -1,5 +1,5 @@
 using Microsoft.CodeAnalysis;
 
-namespace DTOGenerator.Models;
+namespace Mapperic.Models;
 
 internal sealed record ClassDtoResult(INamedTypeSymbol ClassSymbol, List<MemberInfo> Members);

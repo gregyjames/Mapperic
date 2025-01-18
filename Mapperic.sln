@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOGenerator", "DTOGenerator\DTOGenerator.csproj", "{983783C1-13AC-4333-A578-0DE9D0029BEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapperic", "Mapperic\Mapperic.csproj", "{983783C1-13AC-4333-A578-0DE9D0029BEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOGeneratorTester", "DTOGeneratorTester\DTOGeneratorTester.csproj", "{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappericTester", "MappericTester\MappericTester.csproj", "{9E996F15-9DFD-4BF7-895F-6E07876C9EBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

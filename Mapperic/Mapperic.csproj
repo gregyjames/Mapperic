@@ -9,7 +9,7 @@
         <IsPackable>true</IsPackable>
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>DTOGenerator</Title>
+        <Title>Mapperic</Title>
         <Authors>Greg James</Authors>
         <Copyright>Greg James 2015</Copyright>
         <PackageProjectUrl>https://github.com/gregyjames/DTOGenerator</PackageProjectUrl>
@@ -20,7 +20,8 @@
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <PackageIcon>Icons8-Windows-8-Data-Mind-Map.128.png</PackageIcon>
         <PackageTags>dto, data, automapper, mapper, oop, object, fields</PackageTags>
-        <Description>Automatically generate DTO Classes and AutoMapper Configurations.</Description>
+        <Description>Mapping Magic! Automatically generate DTO Classes and AutoMapper Configurations.</Description>
+        <RootNamespace>Mapperic</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

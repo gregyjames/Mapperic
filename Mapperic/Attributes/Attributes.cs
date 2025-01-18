@@ -1,4 +1,4 @@
-namespace DTOGenerator.Attributes;
+namespace Mapperic.Attributes;
 
 /// <summary>
 /// Mark a field or property with this attribute to include it in the generated DTO.

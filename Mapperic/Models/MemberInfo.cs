@@ -1,6 +1,6 @@
 using Microsoft.CodeAnalysis;
 
-namespace DTOGenerator.Models;
+namespace Mapperic.Models;
 
 internal sealed record MemberInfo(
     string OriginalName,

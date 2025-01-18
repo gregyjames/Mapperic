@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 
-namespace DTOGeneratorTester;
+namespace MappericTester;
 
 internal static class Program
 {
     static void Main()
     {
         var config = new MapperConfiguration(cfg => {
-            cfg.AddProfile<DTOGenerator.Profiles.DtoMappingProfile>(); // DTO will be generated in the DTOGen.Profiles Namespace
+            cfg.AddProfile<Mapperic.Profiles.DtoMappingProfile>(); // DTO will be generated in the DTOGen.Profiles Namespace
         });
         var mapper = config.CreateMapper();
 
