@@ -1,5 +1,5 @@
-# DTOGen
-Automatically generate DTO Classes and AutoMapper Configurations using Roslyn Incremental Source Generators.
+# Mapperic
+Mapping Magic! Automatically generate DTO Classes and AutoMapper Configurations using Roslyn Incremental Source Generators.
 
 ## How it works
 This library utilizes Roslyn Incremental Source Generators to generate Data Transfer Objects (DTOs) for classes marked with the attribute `[GenerateDto]` and properties/fields marked with the attribute `[DtoProperty]`. Then the relationship between the DTO and the original object is automatically saved into profile that can be fed into AutoMapper to create an object mapper.
