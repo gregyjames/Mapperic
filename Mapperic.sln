@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappericTester", "MappericT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapperic.Attributes", "Mapperic.Attributes\Mapperic.Attributes.csproj", "{680755AC-FAE1-45DA-B68F-05F812976C78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MappericTests", "MappericTests\MappericTests.csproj", "{BEE53356-7FF3-4DE1-B7D8-6AED3BEB985B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{680755AC-FAE1-45DA-B68F-05F812976C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{680755AC-FAE1-45DA-B68F-05F812976C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{680755AC-FAE1-45DA-B68F-05F812976C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE53356-7FF3-4DE1-B7D8-6AED3BEB985B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE53356-7FF3-4DE1-B7D8-6AED3BEB985B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE53356-7FF3-4DE1-B7D8-6AED3BEB985B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE53356-7FF3-4DE1-B7D8-6AED3BEB985B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
