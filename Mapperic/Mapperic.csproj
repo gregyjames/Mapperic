@@ -11,7 +11,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>Mapperic</Title>
         <Authors>Greg James</Authors>
-        <Copyright>Greg James 2015</Copyright>
+        <Copyright>Copyright (c) 2025 Greg James</Copyright>
         <PackageProjectUrl>https://github.com/gregyjames/Mapperic</PackageProjectUrl>
         <RepositoryUrl>https://github.com/gregyjames/Mapperic</RepositoryUrl>
         <RepositoryType>git</RepositoryType>

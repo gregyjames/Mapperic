@@ -10,7 +10,7 @@ This tool is tailor-made for developers who can’t stand the repetitive task of
 ## Example
 Test.cs
 ```csharp
-using DTOGenerator.Attributes;  
+using Mapperic.Attributes;  
   
 namespace DTOGeneratorTester;  
   
@@ -56,7 +56,7 @@ internal static class Program
 
 .csproj
 ```
-<PackageReference Include="DTOGenerator" Version="x.y.z" PrivateAssets="all" />
+<PackageReference Include="Mapperic" Version="x.y.z" PrivateAssets="all" />
 ```
 
 ## Known Limitations
